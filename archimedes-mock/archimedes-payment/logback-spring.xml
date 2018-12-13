@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+	<!-- 控制台设置 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoder 默认配置为PatternLayoutEncoder -->
+		<encoder>
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] |%X{tid}| %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="fileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+          <!-- 文件输出的日志 的格式 -->
+          <encoder>
+              <pattern>
+                   %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] |%X{tid}| %-5level %logger{5} - %msg%n
+              </pattern>
+              <charset>UTF-8</charset> <!-- 此处设置字符集，防止中文乱码 -->
+          </encoder>
+
+          <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+              <fileNamePattern>./logs/payment-server-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+              <timeBasedFileNamingAndTriggeringPolicy
+                   class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                   <!-- 最大64MB 超过最大值，会重新建一个文件-->
+                   <maxFileSize>64 MB</maxFileSize>
+              </timeBasedFileNamingAndTriggeringPolicy>
+          </rollingPolicy>
+
+          <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+              <level>DEBUG</level>
+          </filter>
+    </appender>
+
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.springboot" level="INFO" />
+	<logger name="com.archimedes.payment" level="INFO" />
+
+	<!-- * 通配符 设置log打印级别 对所有类有效TRACE, DEBUG, INFO, WARN, ERROR, ALL 和 OFF -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="fileAppender" />
+	</root>
+</configuration> 

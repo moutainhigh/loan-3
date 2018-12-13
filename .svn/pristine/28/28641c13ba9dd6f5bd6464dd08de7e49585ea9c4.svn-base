@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="archimedes-account-api" />
+        <module name="archimedes-account-server" />
+        <module name="archimedes-bigdata" />
+        <module name="archimedes-borrow-api" />
+        <module name="archimedes-borrow-server" />
+        <module name="archimedes-collect-api" />
+        <module name="archimedes-collect-server" />
+        <module name="archimedes-console-default" />
+        <module name="archimedes-lend-api" />
+        <module name="archimedes-lend-server" />
+        <module name="archimedes-member-api" />
+        <module name="archimedes-member-server" />
+        <module name="archimedes-payment" />
+        <module name="archimedes-product-api" />
+        <module name="archimedes-product-server" />
+        <module name="archimedes-rule-api" />
+        <module name="archimedes-rule-server" />
+        <module name="arhimedes-portal-default" />
+        <module name="config-server" />
+        <module name="etcdlock-spring-boot-starter" />
+        <module name="eureka-server" />
+        <module name="id-generator-api" />
+        <module name="id-generator-boot-sample" />
+        <module name="id-generator-core" />
+        <module name="id-generator-starter" />
+        <module name="job-spring-boot-starter" />
+        <module name="process-api" />
+        <module name="rediscache-spring-boot-starter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="archimedes-account" target="1.8" />
+      <module name="archimedes-bill-server" target="1.8" />
+      <module name="archimedes-complete" target="1.8" />
+      <module name="archimedes-complete-api" target="1.8" />
+      <module name="archimedes-complete-server" target="1.8" />
+      <module name="archimedes-drools" target="1.8" />
+      <module name="archimedes-drools-api" target="1.8" />
+      <module name="archimedes-drools-server" target="1.8" />
+      <module name="archimedes-order" target="1.8" />
+      <module name="archimedes-order-api" target="1.8" />
+      <module name="archimedes-order-server" target="1.8" />
+      <module name="archimedes-precess-api" target="1.8" />
+      <module name="archimedes-prepare" target="1.8" />
+      <module name="archimedes-prepare-api" target="1.8" />
+      <module name="archimedes-prepare-server" target="1.8" />
+      <module name="archimedes-process" target="1.8" />
+      <module name="archimedes-process-api" target="1.8" />
+      <module name="archimedes-process-server" target="1.8" />
+      <module name="archimedes-product" target="1.8" />
+      <module name="process-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

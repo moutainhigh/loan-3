@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.archimedes.service.mapper.BankInfoMapper">
+  <resultMap id="BaseResultMap" type="com.archimedes.service.lend.entity.BankInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="BIF_BANK_CODE" jdbcType="VARCHAR" property="bankCode" />
+    <result column="BIF_BANK_NAME" jdbcType="VARCHAR" property="bankName" />
+    <result column="BIF_BANK_BIG_LOGO" jdbcType="VARCHAR" property="bankBigLogo" />
+    <result column="BIF_BANK_SMALL_LOGO" jdbcType="VARCHAR" property="bankSmallLogo" />
+    <result column="BIF_FIRST_CHARACTER" jdbcType="CHAR" property="firstCharacter" />
+    <result column="BIF_HOT_BANK" jdbcType="CHAR" property="hotBank" />
+    <result column="BIF_PRIORITY" jdbcType="TINYINT" property="priority" />
+  </resultMap>
+</mapper>

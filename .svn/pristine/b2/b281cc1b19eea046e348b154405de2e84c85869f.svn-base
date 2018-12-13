@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-center/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-center/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/etcdlock-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/id-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/id-generator/id-generator-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/id-generator/id-generator-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/id-generator/id-generator-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/id-generator/id-generator-sample/id-generator-boot-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/id-generator/id-generator-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/job-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-component/rediscache-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-console" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-console/archimedes-console-default" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-mock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-mock/archimedes-bigdata" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-mock/archimedes-payment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-portal/arhimedes-portal-default" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-account" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-account/archimedes-account-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-account/archimedes-account-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-borrow" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-borrow/archimedes-borrow-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-borrow/archimedes-borrow-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-collect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-collect/archimedes-collect-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-collect/archimedes-collect-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-complete" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-complete/archimedes-complete-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-complete/archimedes-complete-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-drools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-drools/archimedes-drools-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-drools/archimedes-drools-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-lend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-lend/archimedes-lend-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-lend/archimedes-lend-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-member/archimedes-member-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-member/archimedes-member-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-prepare" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-prepare/archimedes-prepare-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-prepare/archimedes-prepare-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-process" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-process/archimedes-process-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-process/archimedes-process-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-product/archimedes-product-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-product/archimedes-product-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-rule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-rule/archimedes-rule-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/archimedes-service/archimedes-rule/archimedes-rule-server" charset="UTF-8" />
+  </component>
+</project>

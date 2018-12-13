@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+  <context id="Mysql" targetRuntime="tk.mybatis.mapper.generator.TkMyBatis3SimpleImpl"
+    defaultModelType="flat">
+    <property name="beginningDelimiter" value="`"/>
+    <property name="endingDelimiter" value="`"/>
+
+    <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+      <property name="mappers" value="com.archimedes.mybatis.BaseMapper"/>
+      <property name="caseSensitive" value="true"/>
+    </plugin>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+      connectionURL="jdbc:mysql://192.168.1.250:3306/loandb?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull"
+      userId="loandb"
+      password="loandb">
+    </jdbcConnection>
+
+    <javaModelGenerator targetPackage="com.archimedes.service.lend.entity"
+      targetProject="../archimedes-lend-api/src/main/java/">
+      <property name="enableSubPackages" value="true"/>
+      <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="mybatis/mapper"
+      targetProject="../archimedes-lend-server/src/main/resources/">
+      <property name="enableSubPackages" value="false"/>
+    </sqlMapGenerator>
+
+    <javaClientGenerator targetPackage="com.archimedes.service.mapper"
+      targetProject="../archimedes-lend-server/src/main/java/" type="XMLMAPPER">
+      <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+
+    <!--<table tableName="BANK_INFO%" mapperName="{0}Mapper">-->
+      <!--<generatedKey column="VIF_VOUCHERNO" sqlStatement="Mysql" identity="true"/>-->
+    <!--</table>-->
+    <table tableName="BANK_INFO" domainObjectName="BankInfo"
+           enableCountByExample="false" enableUpdateByExample="false"
+           enableDeleteByExample="false" enableSelectByExample="false"
+           selectByExampleQueryId="false">
+      <columnRenamingRule searchString="^BIF_" replaceString="" />
+    </table>
+  </context>
+</generatorConfiguration>

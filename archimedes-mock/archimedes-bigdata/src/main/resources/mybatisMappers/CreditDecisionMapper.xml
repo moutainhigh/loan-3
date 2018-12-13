@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.archimedes.ic.mapper.CreditDecisionMapper" >
+  <resultMap id="BaseResultMap" type="com.archimedes.ic.domain.CreditDecision" >
+    <id column="CDS_CREDIT_NO" property="creditNo" jdbcType="VARCHAR" />
+    <result column="CDS_CERT_TYPE" property="certType" jdbcType="CHAR" />
+    <result column="CDS_CERT_NO" property="certNo" jdbcType="VARCHAR" />
+    <result column="CDS_CREDIT_RANK" property="creditRank" jdbcType="VARCHAR" />
+    <result column="CDS_CREATE_TIME" property="createTime" jdbcType="CHAR" />
+    <result column="CDS_CREDIT_TIME" property="creditTime" jdbcType="CHAR" />
+    <result column="CDS_CREDIT_EXPIRY_TIME" property="creditExpiryTime" jdbcType="CHAR" />
+    <result column="CDS_CREDIT_LIMIT" property="creditLimit" jdbcType="DECIMAL" />
+    <result column="CDS_STATUS" property="status" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    CDS_CREDIT_NO, CDS_CERT_TYPE, CDS_CERT_NO, CDS_CREDIT_RANK, CDS_CREATE_TIME, CDS_CREDIT_TIME, 
+    CDS_CREDIT_EXPIRY_TIME, CDS_CREDIT_LIMIT, CDS_STATUS
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from credit_decision
+    where CDS_CREDIT_NO = #{creditNo,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from credit_decision
+    where CDS_CREDIT_NO = #{creditNo,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.archimedes.ic.domain.CreditDecision" >
+    insert into credit_decision (CDS_CREDIT_NO, CDS_CERT_TYPE, CDS_CERT_NO, 
+      CDS_CREDIT_RANK, CDS_CREATE_TIME, CDS_CREDIT_TIME, 
+      CDS_CREDIT_EXPIRY_TIME, CDS_CREDIT_LIMIT, CDS_STATUS
+      )
+    values (#{creditNo,jdbcType=VARCHAR}, #{certType,jdbcType=CHAR}, #{certNo,jdbcType=VARCHAR}, 
+      #{creditRank,jdbcType=VARCHAR}, #{createTime,jdbcType=CHAR}, #{creditTime,jdbcType=CHAR}, 
+      #{creditExpiryTime,jdbcType=CHAR}, #{creditLimit,jdbcType=DECIMAL}, #{status,jdbcType=CHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.archimedes.ic.domain.CreditDecision" >
+    insert into credit_decision
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="creditNo != null" >
+        CDS_CREDIT_NO,
+      </if>
+      <if test="certType != null" >
+        CDS_CERT_TYPE,
+      </if>
+      <if test="certNo != null" >
+        CDS_CERT_NO,
+      </if>
+      <if test="creditRank != null" >
+        CDS_CREDIT_RANK,
+      </if>
+      <if test="createTime != null" >
+        CDS_CREATE_TIME,
+      </if>
+      <if test="creditTime != null" >
+        CDS_CREDIT_TIME,
+      </if>
+      <if test="creditExpiryTime != null" >
+        CDS_CREDIT_EXPIRY_TIME,
+      </if>
+      <if test="creditLimit != null" >
+        CDS_CREDIT_LIMIT,
+      </if>
+      <if test="status != null" >
+        CDS_STATUS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="creditNo != null" >
+        #{creditNo,jdbcType=VARCHAR},
+      </if>
+      <if test="certType != null" >
+        #{certType,jdbcType=CHAR},
+      </if>
+      <if test="certNo != null" >
+        #{certNo,jdbcType=VARCHAR},
+      </if>
+      <if test="creditRank != null" >
+        #{creditRank,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=CHAR},
+      </if>
+      <if test="creditTime != null" >
+        #{creditTime,jdbcType=CHAR},
+      </if>
+      <if test="creditExpiryTime != null" >
+        #{creditExpiryTime,jdbcType=CHAR},
+      </if>
+      <if test="creditLimit != null" >
+        #{creditLimit,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.archimedes.ic.domain.CreditDecision" >
+    update credit_decision
+    <set >
+      <if test="certType != null" >
+        CDS_CERT_TYPE = #{certType,jdbcType=CHAR},
+      </if>
+      <if test="certNo != null" >
+        CDS_CERT_NO = #{certNo,jdbcType=VARCHAR},
+      </if>
+      <if test="creditRank != null" >
+        CDS_CREDIT_RANK = #{creditRank,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        CDS_CREATE_TIME = #{createTime,jdbcType=CHAR},
+      </if>
+      <if test="creditTime != null" >
+        CDS_CREDIT_TIME = #{creditTime,jdbcType=CHAR},
+      </if>
+      <if test="creditExpiryTime != null" >
+        CDS_CREDIT_EXPIRY_TIME = #{creditExpiryTime,jdbcType=CHAR},
+      </if>
+      <if test="creditLimit != null" >
+        CDS_CREDIT_LIMIT = #{creditLimit,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null" >
+        CDS_STATUS = #{status,jdbcType=CHAR},
+      </if>
+    </set>
+    where CDS_CREDIT_NO = #{creditNo,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.archimedes.ic.domain.CreditDecision" >
+    update credit_decision
+    set CDS_CERT_TYPE = #{certType,jdbcType=CHAR},
+      CDS_CERT_NO = #{certNo,jdbcType=VARCHAR},
+      CDS_CREDIT_RANK = #{creditRank,jdbcType=VARCHAR},
+      CDS_CREATE_TIME = #{createTime,jdbcType=CHAR},
+      CDS_CREDIT_TIME = #{creditTime,jdbcType=CHAR},
+      CDS_CREDIT_EXPIRY_TIME = #{creditExpiryTime,jdbcType=CHAR},
+      CDS_CREDIT_LIMIT = #{creditLimit,jdbcType=DECIMAL},
+      CDS_STATUS = #{status,jdbcType=CHAR}
+    where CDS_CREDIT_NO = #{creditNo,jdbcType=VARCHAR}
+  </update>
+</mapper>

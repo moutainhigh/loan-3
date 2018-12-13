@@ -1,0 +1,24 @@
+server:
+  port: 8089
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7070/eureka/
+
+spring:
+  application:
+    name: rule-server
+
+logging:
+  level:
+    org.springframework.cloud.sleuth: debug
+  path: logs/
+  file:
+    max-size: 1GB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

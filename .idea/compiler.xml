@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="archimedes-account-api" />
+        <module name="archimedes-account-server" />
+        <module name="archimedes-bigdata" />
+        <module name="archimedes-borrow-api" />
+        <module name="archimedes-borrow-server" />
+        <module name="archimedes-collect-api" />
+        <module name="archimedes-collect-server" />
+        <module name="archimedes-console-default" />
+        <module name="archimedes-date-util" />
+        <module name="archimedes-lend-api" />
+        <module name="archimedes-member-api" />
+        <module name="archimedes-member-server" />
+        <module name="archimedes-payment" />
+        <module name="archimedes-payment (1)" />
+        <module name="archimedes-product-api" />
+        <module name="archimedes-rule-api" />
+        <module name="archimedes-rule-server" />
+        <module name="arhimedes-portal-default" />
+        <module name="config-server" />
+        <module name="etcdlock-spring-boot-starter" />
+        <module name="eureka-server" />
+        <module name="id-generator-api" />
+        <module name="id-generator-boot-sample" />
+        <module name="id-generator-core" />
+        <module name="id-generator-starter" />
+        <module name="job-spring-boot-starter" />
+        <module name="mybatis-generator-plugin" />
+        <module name="process-api" />
+        <module name="rediscache-spring-boot-starter" />
+      </profile>
+      <profile name="Annotation profile for cloud" enabled="true">
+        <sourceOutputDir name="../../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="archimedes-lend-server" />
+        <module name="archimedes-product-server" />
+      </profile>
+      <profile name="Annotation profile for archimedes-payment (2)" enabled="true">
+        <sourceOutputDir name="../archimedes-bigdata/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../archimedes-bigdata/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="archimedes-payment (2)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="archimedes-account" target="1.8" />
+      <module name="archimedes-bill-server" target="1.8" />
+      <module name="archimedes-complete" target="1.8" />
+      <module name="archimedes-complete-api" target="1.8" />
+      <module name="archimedes-complete-server" target="1.8" />
+      <module name="archimedes-drools" target="1.8" />
+      <module name="archimedes-drools-api" target="1.8" />
+      <module name="archimedes-drools-server" target="1.8" />
+      <module name="archimedes-order" target="1.8" />
+      <module name="archimedes-order-api" target="1.8" />
+      <module name="archimedes-order-server" target="1.8" />
+      <module name="archimedes-precess-api" target="1.8" />
+      <module name="archimedes-prepare" target="1.8" />
+      <module name="archimedes-prepare-api" target="1.8" />
+      <module name="archimedes-prepare-server" target="1.8" />
+      <module name="archimedes-process" target="1.8" />
+      <module name="archimedes-process-api" target="1.8" />
+      <module name="archimedes-process-server" target="1.8" />
+      <module name="archimedes-product" target="1.8" />
+      <module name="process-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="archimedes-account-api" options="-parameters" />
+      <module name="archimedes-account-server" options="-parameters" />
+      <module name="archimedes-borrow-api" options="-parameters" />
+      <module name="archimedes-borrow-server" options="-parameters" />
+      <module name="archimedes-collect-api" options="-parameters" />
+      <module name="archimedes-collect-server" options="-parameters" />
+      <module name="archimedes-console-default" options="-parameters" />
+      <module name="archimedes-date-util" options="-parameters" />
+      <module name="archimedes-lend-api" options="-parameters" />
+      <module name="archimedes-lend-server" options="-parameters" />
+      <module name="archimedes-member-api" options="-parameters" />
+      <module name="archimedes-member-server" options="-parameters" />
+      <module name="archimedes-payment (2)" options="-parameters" />
+      <module name="archimedes-product-api" options="-parameters" />
+      <module name="archimedes-product-server" options="-parameters" />
+      <module name="archimedes-rule-api" options="-parameters" />
+      <module name="archimedes-rule-server" options="-parameters" />
+      <module name="arhimedes-portal-default" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="etcdlock-spring-boot-starter" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="id-generator-api" options="-parameters" />
+      <module name="id-generator-boot-sample" options="-parameters" />
+      <module name="id-generator-core" options="-parameters" />
+      <module name="id-generator-starter" options="-parameters" />
+      <module name="job-spring-boot-starter" options="-parameters" />
+      <module name="mybatis-generator-plugin" options="-parameters" />
+      <module name="rediscache-spring-boot-starter" options="-parameters" />
+    </option>
+  </component>
+</project>

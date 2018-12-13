@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/archimedes-member/archimedes-member-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-member/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-order/archimedes-order-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-order/archimedes-order-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-order/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-account-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-account-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-account/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-bill-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-complete-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-complete/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-drools-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-drools/archimedes-drools-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-drools/archimedes-drools-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-drools/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-member-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-prepare-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-prepare/archimedes-prepare-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-prepare/archimedes-prepare-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-prepare/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-process-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-process-server/process-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-process/archimedes-precess-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-process/archimedes-process-api/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-process/archimedes-process-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-process/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-product-server/pom.xml" />
+        <option value="$PROJECT_DIR$/archimedes-service/archimedes-product/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="http://svn.qianbaoqm.com/communityFinance/ajmd/ajmd_service/branches" />
+                  <option value="http://svn.qianbaoqm.com/communityFinance/ajmd/ajmd_service/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="http://svn.qianbaoqm.com/communityFinance/ajmd/ajmd_service/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

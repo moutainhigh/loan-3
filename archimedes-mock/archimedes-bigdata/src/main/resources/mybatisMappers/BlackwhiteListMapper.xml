@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.archimedes.ic.mapper.BlackwhiteListMapper" >
+  <resultMap id="BaseResultMap" type="com.archimedes.ic.domain.BlackwhiteList" >
+    <id column="BWL_CERT_NO" property="certNo" jdbcType="VARCHAR" />
+    <id column="BWL_CERT_TYPE" property="certType" jdbcType="CHAR" />
+    <result column="BWL_LIST_TYPE" property="listType" jdbcType="CHAR" />
+    <result column="BWL_CREATE_TIME" property="createTime" jdbcType="CHAR" />
+    <result column="BWL_USER_NO" property="userNo" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    BWL_CERT_NO, BWL_CERT_TYPE, BWL_LIST_TYPE, BWL_CREATE_TIME, BWL_USER_NO
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.archimedes.ic.domain.BlackwhiteListKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from blackwhite_list
+    where BWL_CERT_NO = #{certNo,jdbcType=VARCHAR}
+      and BWL_CERT_TYPE = #{certType,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.archimedes.ic.domain.BlackwhiteListKey" >
+    delete from blackwhite_list
+    where BWL_CERT_NO = #{certNo,jdbcType=VARCHAR}
+      and BWL_CERT_TYPE = #{certType,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.archimedes.ic.domain.BlackwhiteList" >
+    insert into blackwhite_list (BWL_CERT_NO, BWL_CERT_TYPE, BWL_LIST_TYPE, 
+      BWL_CREATE_TIME, BWL_USER_NO)
+    values (#{certNo,jdbcType=VARCHAR}, #{certType,jdbcType=CHAR}, #{listType,jdbcType=CHAR}, 
+      #{createTime,jdbcType=CHAR}, #{userNo,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.archimedes.ic.domain.BlackwhiteList" >
+    insert into blackwhite_list
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="certNo != null" >
+        BWL_CERT_NO,
+      </if>
+      <if test="certType != null" >
+        BWL_CERT_TYPE,
+      </if>
+      <if test="listType != null" >
+        BWL_LIST_TYPE,
+      </if>
+      <if test="createTime != null" >
+        BWL_CREATE_TIME,
+      </if>
+      <if test="userNo != null" >
+        BWL_USER_NO,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="certNo != null" >
+        #{certNo,jdbcType=VARCHAR},
+      </if>
+      <if test="certType != null" >
+        #{certType,jdbcType=CHAR},
+      </if>
+      <if test="listType != null" >
+        #{listType,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=CHAR},
+      </if>
+      <if test="userNo != null" >
+        #{userNo,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.archimedes.ic.domain.BlackwhiteList" >
+    update blackwhite_list
+    <set >
+      <if test="listType != null" >
+        BWL_LIST_TYPE = #{listType,jdbcType=CHAR},
+      </if>
+      <if test="createTime != null" >
+        BWL_CREATE_TIME = #{createTime,jdbcType=CHAR},
+      </if>
+      <if test="userNo != null" >
+        BWL_USER_NO = #{userNo,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where BWL_CERT_NO = #{certNo,jdbcType=VARCHAR}
+      and BWL_CERT_TYPE = #{certType,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.archimedes.ic.domain.BlackwhiteList" >
+    update blackwhite_list
+    set BWL_LIST_TYPE = #{listType,jdbcType=CHAR},
+      BWL_CREATE_TIME = #{createTime,jdbcType=CHAR},
+      BWL_USER_NO = #{userNo,jdbcType=VARCHAR}
+    where BWL_CERT_NO = #{certNo,jdbcType=VARCHAR}
+      and BWL_CERT_TYPE = #{certType,jdbcType=CHAR}
+  </update>
+</mapper>
